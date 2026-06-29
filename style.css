@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#243127;
+    color:white;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:#d8c39b;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d8c39b;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero-img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:800px;
+}
+
+.hero h3{
+    color:#d8c39b;
+    font-size:24px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.9;
+    font-size:18px;
+}
+
+.music{
+    margin-top:35px;
+}
+
+.music h4{
+    color:#d8c39b;
+    margin-bottom:12px;
+}
+
+.music audio{
+    width:300px;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:14px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    background:#556B2F;
+    color:white;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#708238;
+    transform:translateY(-3px);
+}
+
+.content{
+    padding:100px 10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.image{
+    flex:1;
+}
+
+.image img{
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.text{
+    flex:1;
+}
+
+.text h2{
+    font-size:42px;
+    margin-bottom:25px;
+    color:#d8c39b;
+}
+
+.text p{
+    line-height:2;
+    font-size:17px;
+}
+
+.ending{
+    position:relative;
+    background:url("foto3.jpg.jpeg") center/cover;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.ending .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.ending-text{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:700px;
+}
+
+.ending h1{
+    font-size:60px;
+    color:#d8c39b;
+    margin-bottom:20px;
+}
+
+.ending p{
+    line-height:2;
+    font-size:18px;
+}
+
+.clue{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.clue h2{
+    color:#d8c39b;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.clue p{
+    max-width:700px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+}
+
+.last-request{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.last-request h2{
+    font-size:42px;
+    color:#d8c39b;
+    margin-bottom:25px;
+}
+
+.last-request p{
+    max-width:700px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#1d281f;
+    color:#d8c39b;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    padding:120px 20px 60px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h3{
+    font-size:20px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.music audio{
+    width:100%;
+}
+
+.content,
+.reverse{
+    flex-direction:column;
+    padding:70px 25px;
+    text-align:center;
+}
+
+.image img{
+    max-width:300px;
+    margin:auto;
+}
+
+.text h2{
+    font-size:30px;
+}
+
+.text p{
+    font-size:15px;
+}
+
+.ending{
+    padding:80px 20px;
+}
+
+.ending h1{
+    font-size:38px;
+}
+
+.ending p{
+    font-size:15px;
+}
+
+.clue h2{
+    font-size:30px;
+}
+
+.clue p{
+    font-size:15px;
+}
+
+}
+
+.last-request h2{
+    font-size:30px;
+}
+
+.last-request p{
+    font-size:15px;
+}
